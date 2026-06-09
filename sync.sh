@@ -18,14 +18,18 @@ cd "$GIT_WORK_TREE"
 
 git add -f CCAC zt sync.sh
 
+# git add -f overrides .gitignore; drop local-only binaries before commit
+while IFS= read -r -d '' f; do
+  git rm --cached -f -- "$f" >/dev/null
+done < <(find CCAC zt \( -name '*.zip' -o -name '*.pt' -o -name '*.pth' -o -name '*.ckpt' \) -print0 2>/dev/null)
+
 if [[ -z "$(git status --porcelain)" ]]; then
   echo "No changes to commit."
-  exit 0
+else
+  git commit -m "$MSG"
 fi
 
-git commit -m "$MSG"
+git push origin main
 
 echo
-echo "Committed. Push when ready:"
-echo "  export GIT_DIR=/home/adodas/.git-abcde GIT_WORK_TREE=/home/adodas && git push origin main"
-echo "View: https://github.com/liuwenjing613-maker/abcde"
+echo "Done. View: https://github.com/liuwenjing613-maker/abcde"

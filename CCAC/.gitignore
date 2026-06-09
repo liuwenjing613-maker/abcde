@@ -1,0 +1,5 @@
+# Large local artifacts — keep on disk, do not push
+*.zip
+*.pt
+*.pth
+*.ckpt
