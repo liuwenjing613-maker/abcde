@@ -1,4 +1,3 @@
-artifacts/
 datasets/
 models/
 *.pt
@@ -17,3 +16,6 @@ __pycache__/
 .mypy_cache/
 .ruff_cache/
 .DS_Store
+
+# Track artifacts/ (overrides *.pt / *.npy / *.csv above)
+!artifacts/**
