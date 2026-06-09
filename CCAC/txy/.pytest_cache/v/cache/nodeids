@@ -1,0 +1,9 @@
+[
+  "tests/test_smoke.py::test_calibration_and_metrics",
+  "tests/test_smoke.py::test_grouped_dataset_collate",
+  "tests/test_smoke.py::test_history_feature_builder",
+  "tests/test_smoke.py::test_ordinal_label_encoding",
+  "tests/test_smoke.py::test_residual_v3_fuse",
+  "tests/test_smoke.py::test_stagewise_forward",
+  "tests/test_smoke.py::test_stagewise_v4_forward"
+]

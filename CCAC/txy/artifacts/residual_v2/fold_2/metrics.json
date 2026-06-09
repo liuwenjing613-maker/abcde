@@ -1,0 +1,15 @@
+{
+  "fold": 2,
+  "best_epoch": 3,
+  "model_kind": "residual",
+  "accuracy": 0.5521628498727735,
+  "balanced_accuracy": 0.43480964918522735,
+  "macro_f1": 0.3159432838875348,
+  "weighted_f1": 0.6282142759920243,
+  "min_class_f1": 0.0,
+  "calibrated_accuracy": 0.5521628498727735,
+  "calibrated_balanced_accuracy": 0.43480964918522735,
+  "calibrated_macro_f1": 0.3159432838875348,
+  "calibrated_weighted_f1": 0.6282142759920243,
+  "calibrated_min_class_f1": 0.0
+}

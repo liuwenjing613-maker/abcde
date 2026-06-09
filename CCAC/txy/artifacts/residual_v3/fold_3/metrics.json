@@ -1,0 +1,18 @@
+{
+  "fold": 3,
+  "best_epoch": 5,
+  "model_kind": "residual_v3",
+  "tabular_anchor_macro_f1": 0.28943241943241943,
+  "accuracy": 0.8318181818181818,
+  "balanced_accuracy": 0.3068160597572362,
+  "macro_f1": 0.3004906204906205,
+  "weighted_f1": 0.8276033057851241,
+  "min_class_f1": 0.0,
+  "val_zero_history_macro_f1": 0.21190811064228784,
+  "val_zero_history_accuracy": 0.8272727272727273,
+  "calibrated_accuracy": 0.8409090909090909,
+  "calibrated_balanced_accuracy": 0.3257391845627139,
+  "calibrated_macro_f1": 0.319625387735624,
+  "calibrated_weighted_f1": 0.8344377020021259,
+  "calibrated_min_class_f1": 0.0
+}

@@ -1,0 +1,42 @@
+/home/adodas/anaconda3/lib/python3.13/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/home/adodas/anaconda3/lib/python3.13/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/home/adodas/anaconda3/lib/python3.13/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/home/adodas/anaconda3/lib/python3.13/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/home/adodas/anaconda3/lib/python3.13/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/home/adodas/anaconda3/lib/python3.13/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/home/adodas/anaconda3/lib/python3.13/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/home/adodas/anaconda3/lib/python3.13/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/home/adodas/anaconda3/lib/python3.13/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/home/adodas/anaconda3/lib/python3.13/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/adodas/CCAC/txy/scripts/train_residual_v3.py", line 49, in <module>
+    main()
+    ~~~~^^
+  File "/home/adodas/CCAC/txy/scripts/train_residual_v3.py", line 44, in main
+    result = train_residual_v3(config)
+  File "/home/adodas/CCAC/txy/src/txy/training/trainer_v3.py", line 390, in train_residual_v3
+    _write_test_predictions_v3(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        config,
+        ^^^^^^^
+    ...<9 lines>...
+        video_dim,
+        ^^^^^^^^^^
+    )
+    ^
+  File "/home/adodas/CCAC/txy/src/txy/training/trainer_v3.py", line 467, in _write_test_predictions_v3
+    fold_dirs = sorted(output_dir.glob("fold_*"), key=lambda p: int(p.name.split("_")[1]))
+  File "/home/adodas/CCAC/txy/src/txy/training/trainer_v3.py", line 467, in <lambda>
+    fold_dirs = sorted(output_dir.glob("fold_*"), key=lambda p: int(p.name.split("_")[1]))
+                                                                ~~~^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'metrics.csv'

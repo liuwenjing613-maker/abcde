@@ -1,0 +1,46 @@
+{
+  "config": {
+    "dataset_path": "/home/adodas/dataset_ccac",
+    "output_dir": "/home/adodas/CCAC/CCAC_MAPS/artifacts/baselines/anxiety_wavlm_dinov2_small",
+    "audio_feature_name": "audio_wavlm_base",
+    "video_feature_name": "video_dinov2_small",
+    "target_label_column": "t4_anxiety_level",
+    "subject_id_column": "subject_id",
+    "hidden_dim": 256,
+    "temporal_hidden_dim": 192,
+    "dropout": 0.2,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "class_weight_power": 1.0,
+    "label_smoothing": 0.0,
+    "batch_size": 32,
+    "epochs": 80,
+    "patience": 12,
+    "num_folds": 5,
+    "num_workers": 0,
+    "seed": 42,
+    "device": "cuda",
+    "feature_cache": true
+  },
+  "feature_input_dim": 3840,
+  "label_mapping": {
+    "中度": 0,
+    "正常": 1,
+    "轻度": 2,
+    "重度": 3,
+    "非常严重": 4
+  },
+  "fold_metrics_mean": {
+    "fold": 3.0,
+    "best_epoch": 12.2,
+    "accuracy": 0.686300225008036,
+    "macro_f1": 0.22550639135469472,
+    "weighted_f1": 0.6631544904502008,
+    "loss": 6.42173370029428
+  },
+  "overall_oof_metrics": {
+    "accuracy": 0.6863130320890635,
+    "macro_f1": 0.2342055774415654,
+    "weighted_f1": 0.6666332948485338
+  }
+}

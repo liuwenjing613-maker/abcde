@@ -1,0 +1,19 @@
+{
+  "source": "/home/adodas/CCAC/CCAC_MAPS/artifacts/baselines/anxiety_wavlm_dinov2_small",
+  "source_label_mapping": {
+    "中度": 0,
+    "正常": 1,
+    "轻度": 2,
+    "重度": 3,
+    "非常严重": 4
+  },
+  "ordinal_mapping": {
+    "正常": 0,
+    "轻度": 1,
+    "中度": 2,
+    "重度": 3,
+    "非常严重": 4
+  },
+  "oof_rows": 1527,
+  "test_rows": 1909
+}

@@ -1,0 +1,50 @@
+/home/adodas/anaconda3/lib/python3.13/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/home/adodas/anaconda3/lib/python3.13/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/home/adodas/anaconda3/lib/python3.13/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/home/adodas/anaconda3/lib/python3.13/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/home/adodas/anaconda3/lib/python3.13/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/home/adodas/anaconda3/lib/python3.13/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/home/adodas/anaconda3/lib/python3.13/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/home/adodas/anaconda3/lib/python3.13/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/home/adodas/anaconda3/lib/python3.13/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/home/adodas/anaconda3/lib/python3.13/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+{
+  "model_kind": "shallow_mm_lgbm",
+  "config": {
+    "dataset_path": "/home/adodas/dataset_ccac",
+    "output_dir": "/home/adodas/CCAC/txy/artifacts/shallow_mm",
+    "model_type": "lightgbm",
+    "audio_pca_dim": 128,
+    "video_pca_dim": 128,
+    "num_folds": 5,
+    "seed": 42,
+    "group_by": "school_class",
+    "calibrate_bias": true
+  },
+  "feature_dim": 287,
+  "overall_oof_metrics": {
+    "accuracy": 0.7570399476096922,
+    "balanced_accuracy": 0.23784137817554854,
+    "macro_f1": 0.23930890126460067,
+    "weighted_f1": 0.6945657353190465,
+    "min_class_f1": 0.0
+  },
+  "fold_metrics_mean": {
+    "fold": 3.0,
+    "accuracy": 0.7624244620973581,
+    "balanced_accuracy": 0.22849280142961975,
+    "macro_f1": 0.22122805723666517,
+    "weighted_f1": 0.6973616240380494,
+    "min_class_f1": 0.0
+  }
+}

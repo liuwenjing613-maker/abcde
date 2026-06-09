@@ -1,0 +1,15 @@
+{
+  "fold": 4,
+  "best_epoch": 7,
+  "model_kind": "stagewise_v41",
+  "accuracy": 0.6016483516483516,
+  "balanced_accuracy": 0.2983372183372183,
+  "macro_f1": 0.25344142505977035,
+  "weighted_f1": 0.6374113435811587,
+  "min_class_f1": 0.0,
+  "calibrated_accuracy": 0.6923076923076923,
+  "calibrated_balanced_accuracy": 0.2987801087801088,
+  "calibrated_macro_f1": 0.3021104326126104,
+  "calibrated_weighted_f1": 0.6982683783632279,
+  "calibrated_min_class_f1": 0.0
+}

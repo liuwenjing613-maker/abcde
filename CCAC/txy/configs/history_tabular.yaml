@@ -1,0 +1,6 @@
+dataset_path: /home/adodas/dataset_ccac
+output_dir: artifacts/history_tabular
+model_type: lightgbm
+num_folds: 5
+group_by: school_class
+seed: 42

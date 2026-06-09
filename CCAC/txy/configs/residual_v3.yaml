@@ -1,0 +1,16 @@
+dataset_path: /home/adodas/dataset_ccac
+output_dir: artifacts/residual_v3
+anchor_model_type: lightgbm
+alpha_with_history: 0.25
+alpha_missing_history: 1.0
+history_dropout_prob: 0.5
+loss_weight_final: 1.0
+loss_weight_mm: 0.5
+loss_weight_tab: 0.3
+class_weight_power: 1.0
+calibrate_bias: true
+epochs: 80
+batch_size: 32
+num_folds: 5
+seed: 42
+device: cuda

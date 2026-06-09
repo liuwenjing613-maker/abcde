@@ -1,0 +1,14 @@
+dataset_path: /home/adodas/dataset_ccac
+output_dir: artifacts/stagewise_v4
+anchor_model_type: lightgbm
+kd_temperature: 2.0
+kd_weight: 0.4
+ordinal_weight: 0.2
+ce_weight: 1.0
+class_weight_power: 1.0
+calibrate_bias: true
+epochs: 80
+batch_size: 32
+num_folds: 5
+seed: 42
+device: cuda

@@ -1,0 +1,10 @@
+{
+  "dataset_path": "/home/adodas/dataset_ccac",
+  "output_dir": "/home/adodas/CCAC/txy/artifacts/history_tabular",
+  "target_label_column": "t4_anxiety_level",
+  "model_type": "mlp",
+  "num_folds": 5,
+  "seed": 42,
+  "group_by": "school_class",
+  "calibrate_bias": true
+}

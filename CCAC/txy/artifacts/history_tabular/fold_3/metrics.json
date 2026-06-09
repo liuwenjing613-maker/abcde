@@ -1,0 +1,9 @@
+{
+  "fold": 3,
+  "model_type": "mlp",
+  "accuracy": 0.8863636363636364,
+  "balanced_accuracy": 0.3027077497665733,
+  "macro_f1": 0.30448346263781134,
+  "weighted_f1": 0.8539359293218012,
+  "min_class_f1": 0.0
+}

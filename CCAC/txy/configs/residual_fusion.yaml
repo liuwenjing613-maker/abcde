@@ -1,0 +1,12 @@
+dataset_path: /home/adodas/dataset_ccac
+output_dir: artifacts/residual
+alpha: 0.25
+hidden_dim: 256
+temporal_hidden_dim: 192
+batch_size: 32
+epochs: 80
+num_folds: 5
+group_by: school_class
+checkpoint_metric: macro_f1
+seed: 42
+device: cuda

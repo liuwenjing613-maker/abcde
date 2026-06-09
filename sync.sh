@@ -16,7 +16,7 @@ fi
 
 cd "$GIT_WORK_TREE"
 
-git add CCAC zt sync.sh
+git add -f CCAC zt sync.sh
 
 if [[ -z "$(git status --porcelain)" ]]; then
   echo "No changes to commit."

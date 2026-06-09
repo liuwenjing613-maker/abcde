@@ -1,0 +1,69 @@
+{
+  "model_kind": "residual",
+  "config": {
+    "dataset_path": "/home/adodas/dataset_ccac",
+    "output_dir": "/home/adodas/CCAC/txy/artifacts/residual",
+    "audio_feature_name": "audio_wavlm_base",
+    "video_feature_name": "video_dinov2_small",
+    "target_label_column": "t4_anxiety_level",
+    "hidden_dim": 256,
+    "temporal_hidden_dim": 192,
+    "history_hidden_dim": 128,
+    "dropout": 0.2,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "class_weight_power": 1.0,
+    "label_smoothing": 0.0,
+    "batch_size": 32,
+    "epochs": 80,
+    "patience": 12,
+    "num_folds": 5,
+    "num_workers": 0,
+    "seed": 42,
+    "device": "cuda",
+    "feature_cache": true,
+    "group_by": "school_class",
+    "use_history": true,
+    "multimodal_only": false,
+    "stage_drop_prob": 0.1,
+    "clip_drop_prob": 0.05,
+    "feature_noise_std": 0.01,
+    "checkpoint_metric": "macro_f1",
+    "calibrate_bias": true
+  },
+  "label_mapping": {
+    "中度": 0,
+    "正常": 1,
+    "轻度": 2,
+    "重度": 3,
+    "非常严重": 4
+  },
+  "feature_dims": {
+    "audio_dim": 3072,
+    "video_dim": 768,
+    "history_score_dim": 39,
+    "history_level_slots": 9,
+    "tabular_dim": 39
+  },
+  "fold_metrics_mean": {
+    "fold": 3.0,
+    "best_epoch": 7.6,
+    "accuracy": 0.722118599954907,
+    "balanced_accuracy": 0.39262125297657624,
+    "macro_f1": 0.34342664736530726,
+    "weighted_f1": 0.7348240213686461,
+    "min_class_f1": 0.07101089324618737,
+    "calibrated_accuracy": 0.7206304175295237,
+    "calibrated_balanced_accuracy": 0.3521762613874596,
+    "calibrated_macro_f1": 0.32192518141532256,
+    "calibrated_weighted_f1": 0.7243711281286538,
+    "calibrated_min_class_f1": 0.056068895643363724
+  },
+  "overall_oof_metrics": {
+    "accuracy": 0.7092337917485265,
+    "balanced_accuracy": 0.35202958068537255,
+    "macro_f1": 0.33845813033767724,
+    "weighted_f1": 0.7183525588026299,
+    "min_class_f1": 0.08264462809917356
+  }
+}
