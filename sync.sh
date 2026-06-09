@@ -24,7 +24,8 @@ if [[ -z "$(git status --porcelain)" ]]; then
 fi
 
 git commit -m "$MSG"
-git push origin main
 
 echo
-echo "Done. View: https://github.com/liuwenjing613-maker/abcde"
+echo "Committed. Push when ready:"
+echo "  export GIT_DIR=/home/adodas/.git-abcde GIT_WORK_TREE=/home/adodas && git push origin main"
+echo "View: https://github.com/liuwenjing613-maker/abcde"
